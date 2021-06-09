@@ -195,6 +195,10 @@ padding-bottom: 26px;
     padding-top:200px;
     padding-bottom: 200px;
     box-sizing: border-box;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)), url("../images/order.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .order h1 {
@@ -552,35 +556,63 @@ padding-bottom: 26px;
 
 /* ===== CLIENTS====== */
 
-.list-client-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 92px;
-    width: 170px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 1px solid #AFB1B8;
-}
+.section-clients{
+    padding-top: 94px;
+    padding-bottom: 109px;
+    }
+    
+    .clients-title{
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-black-color);
+    margin-bottom: 50px;
+    }
+    
+    .clients-list{
+        display: flex;
+    }  
+    
+    .clients-item{
+        display: flex;
+        margin-right: 30px;
+    
+    } 
+    
+    .clients-item:last-child{
+        margin-right: 0;
+    }
+    
+    .icon-clients-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid var(--icon-social-color);
+        box-sizing: border-box;
+        border-radius: 4px;
+        
+    }
+    
+    .icon-clients{
+        fill: var(--icon-social-color);
+    
+    }
+    
+    .icon-clients-link:hover,
+    .icon-clients-link:focus{
+        border: 1px solid var(--accent-text-color);
+    }
+    
+    .icon-clients-link:hover .icon-clients,
+    .icon-clients-link:focus .icon-clients{
+        fill: var(--accent-text-color);
+        
+    }
 
-.list-client-item-link:focus{
-    color: var(--logo-blue-color);
-}
 
-.list-client-item:hover,
-.list-client-item:focus{
-    cursor: pointer;
-    border: 1px solid var(--logo-blue-color)
-}
-
-.list-client-item:hover .list-client-item-icon,
-.list-client-item:focus .list-client-item-icon {
-    fill: var(--logo-blue-color);
-}
-
-.list-client-item-icon {
-    fill: #AFB1B8;
-}
 /* ===== FOOTER====== */
 
 .address {
