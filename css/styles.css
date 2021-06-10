@@ -131,6 +131,13 @@ padding-bottom: 26px;
    margin-left: auto;
 }
 
+.icon-smartphone,
+.icon-envelope{
+     width: 16px;
+     height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
 
 
 .nav-list-item .link,
@@ -140,6 +147,7 @@ padding-bottom: 26px;
    display: flex;
    align-items: center;
    color: var(--title-black-color);
+   position: relative;
    font-weight: 500;
    font-size: 14px;
    line-height: 1.14;
@@ -160,9 +168,13 @@ padding-bottom: 26px;
 }
 
 .list-item .contacts-portfolio, .list-item .contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
    color:var(--main-text-color);
    text-decoration: none;
 }
+
 
 .list-item{
    display: flex;
@@ -180,8 +192,14 @@ padding-bottom: 26px;
 
 
 .list-item .contacts:hover,
-.list-item .contacts:focus{
-   color: var(--accent-text-color);
+.list-item .contacts:focus,
+.icon-envelope:hover,
+.icon-smartphone:hover,
+.icon-envelope:focus,
+.icon-smartphone:focus{ 
+    color: var(--accent-text-color); 
+    fill: var(--accent-text-color);
+    
 }
 
 
@@ -300,14 +318,14 @@ padding-bottom: 26px;
     
     }
     
-    .feauture-list{
+    .feautures-list{
         display: flex;
         padding-bottom: 0;
         margin-top: -30px;
         margin-left: -30px;
     }
     
-    .feauture-list .list{
+    .feautures-item{
         width: 270px;
         width: calc((100% - 120px) / 4);
         margin-top: 30px;
@@ -315,7 +333,7 @@ padding-bottom: 26px;
         
     }
     
-    .feature-list.title{
+    .feature-list .title{
         color: var(--title-black-color);
         font-weight: 700;
         font-size: 14px;
@@ -327,7 +345,7 @@ padding-bottom: 26px;
     
     }
     
-    .feature-list .text{
+    .features-list .text{
         color: var(--main-text-color);
         font-weight: 400;
         font-size: 14px;
@@ -419,7 +437,6 @@ padding-bottom: 26px;
     flex-basis: calc((100% - 120px) / 4);
     margin-top: 30px;
     margin-left: 30px;
-    
     background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -427,10 +444,10 @@ padding-bottom: 26px;
 
 .item-card{
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
 }
 
-.command-list.title{
+.command-list .title{
     justify-content: center;
     margin-top: 0;
     margin-bottom: 10px;
@@ -441,7 +458,7 @@ padding-bottom: 26px;
     text-align: center;
  }
 
-.command-list.text{
+.command-list .text{
     justify-content: center;
     margin-top: 0;
     color: var(--main-text-color);
@@ -453,7 +470,6 @@ padding-bottom: 26px;
 }
 
 .flex-social{
-
     display: flex;
     justify-content: space-between;
     padding-bottom: 30px;
